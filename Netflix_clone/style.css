@@ -1,10 +1,41 @@
-main{
-    background-image: url("Images/bg.jpg");
-    height: 80vh;
+*{
+    padding: 0px;
+    border:0px;
 }
-main .box{
+
+.main{
+    background-image: url("Images/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    
+}
+.main .box{
     height: 80vh;
     background-color: black;
     width: 100%;
     opacity: 0.44;
+    position: absolute;
+    top: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:60vw;
+    margin: auto;
+    height: 52px;
+
+}
+nav span img{
+    width: 114px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
 }
